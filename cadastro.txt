@@ -1,0 +1,32 @@
+# O que o PO passou:
+
+Sendo um visitante do site Parodify
+Quero fazer o meu cadastro
+Para que eu possa ouvir minhas músicas favoritas
+
+# O que o QA fez em cima (com a ajuda do PO):
+
+- Cadastro (cenário de sucesso)
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro com email, senha e confirmação da senha
+Então devo ser redirecionado para a área logada
+
+- Email não informado (cenário de erro)
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro sem o email
+Então devo ver "Oops! Informe seu email"
+
+- Senha não informada (cenário de erro)
+Dado que acesso a página de cadastro
+Quando submeto o meu cadastro sem a senha
+Então devo ver "Oops! Informe sua senha"
+
+- Senha divergente (cenário de erro)
+Dado que acesso a página de cadastro
+Quando submeto meu cadastro com senha divergente
+Então devo ver "Oops! Senhas não são iguais"
+
+- Nenhum campo preenchido (cenário de erro)
+Dado que acesso a página de cadastro
+Quando submeto meu cadastro sem preencher os campos
+Então devo ver "Oops! Informe seu email e sua senha"
