@@ -7,6 +7,7 @@ Funcionalidade: Cadastro de Usuários
 
   @happy
   Cenario: Cadastro
+
     Dado que acesso a página de cadastro
     Quando submeto o meu cadastro com:
       |email          | teste2@asd.com |
@@ -32,5 +33,6 @@ Funcionalidade: Cadastro de Usuários
 
   @temp
   Cenário: Validação do campo email
+
     Quando acesso a página de cadastro
     Então devo exibir o seguinte css: "input[type=email]"
