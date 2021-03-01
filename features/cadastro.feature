@@ -11,8 +11,8 @@ Funcionalidade: Cadastro de Usuários
     Dado que acesso a página de cadastro
     Quando submeto o meu cadastro com:
       |email          | teste2@asd.com |
-      |senha          | pwd123      |
-      |senha_confirma | pwd123      |
+      |senha          | 123123      |
+      |senha_confirma | 123123      |
     Então devo ser redirecionado para a área logada
 
   Esquema do Cenário: Tentativa de Cadastro
@@ -26,9 +26,9 @@ Funcionalidade: Cadastro de Usuários
 
     Exemplos:
     | email           | senha  | confirma_senha | mensagem_saida                       |
-    |                 | pwd123 | pwd123         | Oops! Informe seu email.             |
+    |                 | 123123 | 123123         | Oops! Informe seu email.             |
     | teste@teste.com |        |                | Oops! Informe sua senha.             |
-    | teste@teste.com | pwd123 | abc123         | Oops! Senhas não são iguais.         |
+    | teste@teste.com | 123123 | 567567         | Oops! Senhas não são iguais.         |
     |                 |        |                | Oops! Informe seu email e sua senha. |
 
   @temp
